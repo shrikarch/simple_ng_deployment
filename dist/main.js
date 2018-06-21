@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <app-login></app-login> -->\r\n<app-navbar></app-navbar>\r\n<router-outlet></router-outlet>\r\n"
+module.exports = "<!-- <app-login></app-login> -->\r\n<app-navbar></app-navbar>\r\n<router-outlet></router-outlet>\r\n<app-footer></app-footer>\r\n"
 
 /***/ }),
 
@@ -107,6 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _user_info_user_summary_user_summary_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./user-info/user-summary/user-summary.component */ "./src/app/user-info/user-summary/user-summary.component.ts");
 /* harmony import */ var _services_customer_data_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/customer-data.service */ "./src/app/services/customer-data.service.ts");
 /* harmony import */ var _services_products_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./services/products.service */ "./src/app/services/products.service.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -132,6 +133,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 //services
 
 
+
 var appRoutes = [
     { path: '', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_8__["DashboardComponent"] },
     { path: 'user', component: _user_info_user_info_component__WEBPACK_IMPORTED_MODULE_11__["UserInfoComponent"] },
@@ -149,6 +151,7 @@ var AppModule = /** @class */ (function () {
                 _dashboard_modal_modal_component__WEBPACK_IMPORTED_MODULE_10__["ModalComponent"],
                 _user_info_user_info_component__WEBPACK_IMPORTED_MODULE_11__["UserInfoComponent"],
                 _user_info_user_summary_user_summary_component__WEBPACK_IMPORTED_MODULE_12__["UserSummaryComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_15__["FooterComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -306,6 +309,69 @@ var ModalComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ModalComponent);
     return ModalComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/footer/footer.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"footer\">\n  <div class=\"text-right small\">\n    Designed with <span class=\"fa fa-fw fa-heart text-danger\"></span> by Miracle Software Systems\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.less":
+/*!**********************************************!*\
+  !*** ./src/app/footer/footer.component.less ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".footer {\n  position: fixed;\n  bottom: 0;\n  color: #fff;\n  width: 100%;\n  height: 30px;\n  /* Set the fixed height of the footer here */\n  line-height: 30px;\n  /* Vertically center the text there */\n  background-color: #333;\n  padding: 0px 15px;\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/footer/footer.component.ts ***!
+  \********************************************/
+/*! exports provided: FooterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FooterComponent = /** @class */ (function () {
+    function FooterComponent() {
+    }
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    FooterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-footer',
+            template: __webpack_require__(/*! ./footer.component.html */ "./src/app/footer/footer.component.html"),
+            styles: [__webpack_require__(/*! ./footer.component.less */ "./src/app/footer/footer.component.less")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FooterComponent);
+    return FooterComponent;
 }());
 
 
